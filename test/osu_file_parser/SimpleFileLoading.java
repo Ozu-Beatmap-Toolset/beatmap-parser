@@ -9,8 +9,8 @@ import osu.map.hit_objects.slider.HitSliderData;
 import osu.map.hit_objects.slider.SliderType;
 import osu.map.hit_objects.spinner.HitSpinnerData;
 import osu.map.parser.Parser;
-import utils.file.IOFile;
-import utils.math.vector.Vector2Int;
+import util.file.IOFile;
+import util.math.vector.Vector2Int;
 
 import java.util.List;
 import java.util.Optional;

@@ -1,6 +1,6 @@
 package osu.map.hit_objects;
 
-import utils.math.vector.Vector2Int;
+import util.math.vector.Vector2Int;
 
 import java.util.ArrayList;
 import java.util.Arrays;

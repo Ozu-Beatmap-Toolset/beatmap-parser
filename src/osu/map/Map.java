@@ -9,5 +9,4 @@ public class Map {
     public Map(final ParsedHitObjects parsedHitObjects) {
         this.parsedHitObjects = parsedHitObjects;
     }
-
 }

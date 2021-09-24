@@ -1,6 +1,6 @@
 package osu_file_parser;
 
-import utils.file.IOFile;
+import util.file.IOFile;
 
 public class SimpleFileGeneration {
 

@@ -1,7 +1,7 @@
 package osu.map.hit_objects.spinner;
 
 import osu.map.hit_objects.CommonHitObjectData;
-import utils.math.vector.Vector2Int;
+import util.math.vector.Vector2Int;
 
 import java.util.ArrayList;
 import java.util.Arrays;

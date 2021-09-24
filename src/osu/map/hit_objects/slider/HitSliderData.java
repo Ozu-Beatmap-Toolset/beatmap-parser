@@ -2,7 +2,7 @@ package osu.map.hit_objects.slider;
 
 import osu.map.hit_objects.CommonHitObjectData;
 import osu.map.hit_objects.SoundSet;
-import utils.math.vector.Vector2Int;
+import util.math.vector.Vector2Int;
 
 import java.util.ArrayList;
 import java.util.Arrays;
