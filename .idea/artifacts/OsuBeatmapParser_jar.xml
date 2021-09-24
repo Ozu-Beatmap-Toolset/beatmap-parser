@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="OsuBeatmapParser:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/OsuBeatmapParser_jar</output-path>
-    <root id="archive" name="OsuBeatmapParser.jar">
-      <element id="module-output" name="OsuBeatmapParser" />
-    </root>
-  </artifact>
-</component>

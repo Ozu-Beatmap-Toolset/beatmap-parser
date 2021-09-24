@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="beatmap-parser:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/beatmap_parser_jar</output-path>
+    <root id="archive" name="beatmap-parser.jar">
+      <element id="module-output" name="beatmap-parser" />
+      <element id="library" level="project" name="generic-utils" />
+    </root>
+  </artifact>
+</component>

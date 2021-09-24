@@ -5,5 +5,11 @@
     </CLASSES>
     <JAVADOC />
     <SOURCES />
+    <excluded>
+      <root url="file://$PROJECT_DIR$/../../generic-utils/out/production/generic-utils/util/data_structure" />
+      <root url="file://$PROJECT_DIR$/../../generic-utils/out/production/generic-utils/util/shape" />
+      <root url="file://$PROJECT_DIR$/../../generic-utils/out/production/generic-utils/util/state_machine" />
+      <root url="file://$PROJECT_DIR$/../../generic-utils/out/production/generic-utils/util/tinysound" />
+    </excluded>
   </library>
 </component>

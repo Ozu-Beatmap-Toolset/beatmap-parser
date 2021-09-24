@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/OsuBeatmapParser.iml" filepath="$PROJECT_DIR$/OsuBeatmapParser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/beatmap-parser.iml" filepath="$PROJECT_DIR$/beatmap-parser.iml" />
     </modules>
   </component>
 </project>

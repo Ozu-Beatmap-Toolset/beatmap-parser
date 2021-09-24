@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a32dcb6e-daf4-4ed3-a944-c53f04162325" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/beatmap_parser_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatmap-parser.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/OsuBeatmapParser_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/generic_utils.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/generic_utils.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OsuBeatmapParser.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OsuBeatmapParser/example/BeatMapReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OsuBeatmapParser/example/IRyS Ch. hololive-EN - Caesura of Despair (Plads) [Insane].osu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OsuBeatmapParser/osu/beatmap/BeatMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OsuBeatmapParser/osu/beatmap/TimingPoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OsuBeatmapParser/osu/beatmap/hit_objects/CommonHitObjectData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OsuBeatmapParser/osu/beatmap/hit_objects/HitObjectType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OsuBeatmapParser/osu/beatmap/hit_objects/HitObjectTypeException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OsuBeatmapParser/osu/beatmap/hit_objects/SoundSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OsuBeatmapParser/osu/beatmap/hit_objects/circle/HitCircleData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OsuBeatmapParser/osu/beatmap/hit_objects/slider/HitSliderData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OsuBeatmapParser/osu/beatmap/hit_objects/slider/SliderControlPointException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OsuBeatmapParser/osu/beatmap/hit_objects/slider/SliderType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OsuBeatmapParser/osu/beatmap/hit_objects/slider/SliderTypeException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OsuBeatmapParser/osu/beatmap/hit_objects/spinner/HitSpinnerData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OsuBeatmapParser/osu/beatmap/parser/OsuFileParserException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OsuBeatmapParser/osu/beatmap/parser/ParsedHitObjects$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OsuBeatmapParser/osu/beatmap/parser/ParsedHitObjects.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OsuBeatmapParser/osu/beatmap/parser/Parser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/OsuBeatmapParser/osu_file_parser/IRyS Ch. hololive-EN - Caesura of Despair (Plads) [Insane].osu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/OsuBeatmapParser/osu_file_parser/SimpleFileGeneration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/OsuBeatmapParser/osu_file_parser/SimpleFileLoading.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/OsuBeatmapParser/osu_file_parser/invalid header osu file.osu" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1yax0x4Z4oHFEhqUj35BFAKCBHO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a32dcb6e-daf4-4ed3-a944-c53f04162325" name="Default Changelist" comment="" />
+      <created>1632503280838</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632503280838</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="690" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1632503426468">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632503426468" />
+    <state x="666" y="261" key="FileChooserDialogImpl" timestamp="1632504538120">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632504538120" />
+    <state x="625" y="224" key="NewModule_or_Project.wizard" timestamp="1632503409473">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="625" y="224" key="NewModule_or_Project.wizard/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632503409473" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1632504638651">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632504638651" />
+    <state x="664" y="412" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1632503332290">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="664" y="412" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632503332290" />
+    <state x="342" y="140" key="new project wizard" timestamp="1632504181579">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="140" key="new project wizard/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632504181579" />
+  </component>
+</project>
