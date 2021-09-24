@@ -19,7 +19,13 @@ public class HitCircleData extends CommonHitObjectData {
         this.hitObjectType = CommonHitObjectData.parseHitObjectType(splitData);
         this.hitSound =      CommonHitObjectData.parseHitSound(splitData);
 
-        final String[] stringSplitHitSample = splitData[5].split(":");
+        String[] stringSplitHitSample;
+        try {
+            stringSplitHitSample = splitData[5].split(":");
+        }
+        catch(RuntimeException exception) {
+            stringSplitHitSample = new String[]{"0", "0", "0", "0", ""};
+        }
         this.customAdditionSoundFileName = CommonHitObjectData.parseHitSampleCustomSoundFile(stringSplitHitSample);
         this.hitSample = CommonHitObjectData.parseHitSampleInts(stringSplitHitSample);
     }

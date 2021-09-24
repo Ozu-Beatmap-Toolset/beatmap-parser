@@ -37,15 +37,15 @@ public class HitSliderData extends CommonHitObjectData {
         this.edgeSounds =                   this.parseEdgeSounds(splitData);
         this.edgeSets =                     this.parseEdgeSets(splitData);
 
-        String[] stringSplitHistSample;
+        String[] stringSplitHitSample;
         try {
-            stringSplitHistSample = splitData[10].split(":");
+            stringSplitHitSample = splitData[10].split(":");
         }
         catch(RuntimeException exception) {
-            stringSplitHistSample = new String[]{"0", "0", "0", "0", ""};
+            stringSplitHitSample = new String[]{"0", "0", "0", "0", ""};
         }
-        this.customAdditionSoundFileName = CommonHitObjectData.parseHitSampleCustomSoundFile(stringSplitHistSample);
-        this.hitSample = CommonHitObjectData.parseHitSampleInts(stringSplitHistSample);
+        this.customAdditionSoundFileName = CommonHitObjectData.parseHitSampleCustomSoundFile(stringSplitHitSample);
+        this.hitSample = CommonHitObjectData.parseHitSampleInts(stringSplitHitSample);
     }
 
     private List<SoundSet> parseEdgeSets(String[] splitData) {

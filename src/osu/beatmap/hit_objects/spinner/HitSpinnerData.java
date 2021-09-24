@@ -20,8 +20,14 @@ public class HitSpinnerData extends CommonHitObjectData {
         this.hitSound =      CommonHitObjectData.parseHitSound(splitData);
         this.endTime =                   Integer.parseInt(splitData[5]);
 
-        final String[] stringSplitHistSample = splitData[6].split(":");
-        this.customAdditionSoundFileName = CommonHitObjectData.parseHitSampleCustomSoundFile(stringSplitHistSample);
-        this.hitSample = CommonHitObjectData.parseHitSampleInts(stringSplitHistSample);
+        String[] stringSplitHitSample;
+        try {
+            stringSplitHitSample = splitData[6].split(":");
+        }
+        catch(RuntimeException exception) {
+            stringSplitHitSample = new String[]{"0", "0", "0", "0", ""};
+        }
+        this.customAdditionSoundFileName = CommonHitObjectData.parseHitSampleCustomSoundFile(stringSplitHitSample);
+        this.hitSample = CommonHitObjectData.parseHitSampleInts(stringSplitHitSample);
     }
 }

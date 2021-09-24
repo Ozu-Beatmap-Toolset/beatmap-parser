@@ -99,7 +99,7 @@ public class SimpleFileLoading {
 
     @Test
     public void loadingHitObjectsOfValidFileLoadsTheRightAmountOfHitObjects() {
-        final ParsedHitObjects parsedHitObjects = Parser.decode(new File(VALID_OSU_FILE_PATH)).get().parsedHitObjects;
+        final ParsedHitObjects parsedHitObjects = Parser.decode(new File(VALID_OSU_FILE_PATH)).get().hitObjects;
 
         assert parsedHitObjects.hitCircleData.size() == 283;
         assert parsedHitObjects.hitSliderData.size() == 116;

@@ -4,9 +4,9 @@ import osu.beatmap.parser.ParsedHitObjects;
 
 public class BeatMap {
 
-    public ParsedHitObjects parsedHitObjects;
+    public ParsedHitObjects hitObjects;
 
     public BeatMap(final ParsedHitObjects parsedHitObjects) {
-        this.parsedHitObjects = parsedHitObjects;
+        this.hitObjects = parsedHitObjects;
     }
 }

@@ -23,7 +23,7 @@ public class BeatMapReader {
 
         // do stuff with it!
         map.ifPresent(beatMap -> {
-            final ParsedHitObjects beatMapData = beatMap.parsedHitObjects;
+            final ParsedHitObjects beatMapData = beatMap.hitObjects;
             final List<HitCircleData> circleDataList = beatMapData.hitCircleData;
 
             circleDataList.stream()
