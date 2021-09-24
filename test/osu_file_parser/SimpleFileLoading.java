@@ -1,17 +1,18 @@
 package osu_file_parser;
 
 import org.junit.jupiter.api.Test;
-import osu.map.Map;
-import osu.map.parser.ParsedHitObjects;
-import osu.map.hit_objects.SoundSet;
-import osu.map.hit_objects.circle.HitCircleData;
-import osu.map.hit_objects.slider.HitSliderData;
-import osu.map.hit_objects.slider.SliderType;
-import osu.map.hit_objects.spinner.HitSpinnerData;
-import osu.map.parser.Parser;
+import osu.beatmap.BeatMap;
+import osu.beatmap.parser.ParsedHitObjects;
+import osu.beatmap.hit_objects.SoundSet;
+import osu.beatmap.hit_objects.circle.HitCircleData;
+import osu.beatmap.hit_objects.slider.HitSliderData;
+import osu.beatmap.hit_objects.slider.SliderType;
+import osu.beatmap.hit_objects.spinner.HitSpinnerData;
+import osu.beatmap.parser.Parser;
 import util.file.IOFile;
 import util.math.vector.Vector2Int;
 
+import java.io.File;
 import java.util.List;
 import java.util.Optional;
 
@@ -21,18 +22,17 @@ public class SimpleFileLoading {
     private static final String VALID_OSU_FILE_NAME = "IRyS Ch. hololive-EN - Caesura of Despair (Plads) [Insane].osu";
     private static final String INVALID_OSU_FILE_NAME = "invalid header osu file.osu";
     private static final List<String> VALID_OSU_FILE_CONTENT = IOFile.getFileContent(ROOT + VALID_OSU_FILE_NAME);
-    private static final List<String> INVALID_OSU_FILE_CONTENT = IOFile.getFileContent(ROOT + INVALID_OSU_FILE_NAME);
 
     @Test
     public void loadingValidOsuFileReturnsOptionalOfOsuMap() {
-        Optional<Map> filledOptional = Parser.decode(VALID_OSU_FILE_CONTENT);
+        Optional<BeatMap> filledOptional = Parser.decode(new File(VALID_OSU_FILE_NAME));
 
         assert filledOptional.isPresent();
     }
 
     @Test
     public void loadingInvalidOsuFileReturnsEmptyOptional() {
-        Optional<Map> emptyOptional = Parser.decode(INVALID_OSU_FILE_CONTENT);
+        Optional<BeatMap> emptyOptional = Parser.decode(new File(INVALID_OSU_FILE_NAME));
 
         assert emptyOptional.isEmpty();
     }
@@ -97,7 +97,7 @@ public class SimpleFileLoading {
 
     @Test
     public void loadingHitObjectsOfValidFileLoadsTheRightAmountOfHitObjects() {
-        final ParsedHitObjects parsedHitObjects = Parser.decode(VALID_OSU_FILE_CONTENT).get().parsedHitObjects;
+        final ParsedHitObjects parsedHitObjects = Parser.decode(new File(VALID_OSU_FILE_NAME)).get().parsedHitObjects;
 
         assert parsedHitObjects.hitCircleData.size() == 283;
         assert parsedHitObjects.hitSliderData.size() == 116;
