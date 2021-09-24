@@ -21,18 +21,20 @@ public class SimpleFileLoading {
     private static final String ROOT = IOFile.getRootFileNameFromClass("test", SimpleFileLoading.class);
     private static final String VALID_OSU_FILE_NAME = "IRyS Ch. hololive-EN - Caesura of Despair (Plads) [Insane].osu";
     private static final String INVALID_OSU_FILE_NAME = "invalid header osu file.osu";
+    private static final String VALID_OSU_FILE_PATH = ROOT + VALID_OSU_FILE_NAME;
+    private static final String INVALID_OSU_FILE_PATH = ROOT + INVALID_OSU_FILE_NAME;
     private static final List<String> VALID_OSU_FILE_CONTENT = IOFile.getFileContent(ROOT + VALID_OSU_FILE_NAME);
 
     @Test
     public void loadingValidOsuFileReturnsOptionalOfOsuMap() {
-        Optional<BeatMap> filledOptional = Parser.decode(new File(VALID_OSU_FILE_NAME));
+        Optional<BeatMap> filledOptional = Parser.decode(new File(VALID_OSU_FILE_PATH));
 
         assert filledOptional.isPresent();
     }
 
     @Test
     public void loadingInvalidOsuFileReturnsEmptyOptional() {
-        Optional<BeatMap> emptyOptional = Parser.decode(new File(INVALID_OSU_FILE_NAME));
+        Optional<BeatMap> emptyOptional = Parser.decode(new File(INVALID_OSU_FILE_PATH));
 
         assert emptyOptional.isEmpty();
     }
@@ -97,7 +99,7 @@ public class SimpleFileLoading {
 
     @Test
     public void loadingHitObjectsOfValidFileLoadsTheRightAmountOfHitObjects() {
-        final ParsedHitObjects parsedHitObjects = Parser.decode(new File(VALID_OSU_FILE_NAME)).get().parsedHitObjects;
+        final ParsedHitObjects parsedHitObjects = Parser.decode(new File(VALID_OSU_FILE_PATH)).get().parsedHitObjects;
 
         assert parsedHitObjects.hitCircleData.size() == 283;
         assert parsedHitObjects.hitSliderData.size() == 116;
