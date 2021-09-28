@@ -1,4 +1,4 @@
-package osu.beatmap.parser;
+package osu.beatmap.serialization;
 
 import osu.beatmap.hit_objects.HitObjectType;
 import osu.beatmap.hit_objects.HitObjectTypeException;

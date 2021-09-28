@@ -1,6 +1,5 @@
-package osu.beatmap.parser;
+package osu.beatmap.serialization;
 
-import osu.beatmap.hit_objects.HitObjectType;
 import osu.beatmap.timing_points.GreenLineData;
 import osu.beatmap.timing_points.RedLineData;
 import osu.beatmap.timing_points.TimingPointType;

@@ -1,4 +1,4 @@
-package osu.beatmap.parser;
+package osu.beatmap.serialization;
 
 public class OsuFileParserException extends Throwable {
     public OsuFileParserException(final String headerName) {

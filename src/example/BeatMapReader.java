@@ -2,8 +2,8 @@ package example;
 
 import osu.beatmap.BeatMap;
 import osu.beatmap.hit_objects.circle.HitCircleData;
-import osu.beatmap.parser.ParsedHitObjects;
-import osu.beatmap.parser.Parser;
+import osu.beatmap.serialization.ParsedHitObjects;
+import osu.beatmap.serialization.BeatMapParser;
 import util.file.IOFile;
 
 import java.io.File;
@@ -19,7 +19,7 @@ public class BeatMapReader {
         final File beatMapFile = new File(root + osuBeatMapFileName);
 
         // get the data object from the beatmap file
-        Optional<BeatMap> map = Parser.decode(beatMapFile);
+        Optional<BeatMap> map = BeatMapParser.decode(beatMapFile);
 
         // do stuff with it!
         map.ifPresent(beatMap -> {

@@ -2,14 +2,14 @@ package osu_file_parser;
 
 import org.junit.jupiter.api.Test;
 import osu.beatmap.BeatMap;
-import osu.beatmap.parser.ParsedHitObjects;
+import osu.beatmap.serialization.ParsedHitObjects;
 import osu.beatmap.hit_objects.SoundSet;
 import osu.beatmap.hit_objects.circle.HitCircleData;
 import osu.beatmap.hit_objects.slider.HitSliderData;
 import osu.beatmap.hit_objects.slider.SliderType;
 import osu.beatmap.hit_objects.spinner.HitSpinnerData;
-import osu.beatmap.parser.ParsedTimingPoints;
-import osu.beatmap.parser.Parser;
+import osu.beatmap.serialization.ParsedTimingPoints;
+import osu.beatmap.serialization.BeatMapParser;
 import osu.beatmap.timing_points.RedLineData;
 import util.file.IOFile;
 import util.math.vector.Vector2Int;
@@ -29,14 +29,14 @@ public class SimpleFileLoading {
 
     @Test
     public void loadingValidOsuFileReturnsOptionalOfOsuMap() {
-        Optional<BeatMap> filledOptional = Parser.decode(new File(VALID_OSU_FILE_PATH));
+        Optional<BeatMap> filledOptional = BeatMapParser.decode(new File(VALID_OSU_FILE_PATH));
 
         assert filledOptional.isPresent();
     }
 
     @Test
     public void loadingInvalidOsuFileReturnsEmptyOptional() {
-        Optional<BeatMap> emptyOptional = Parser.decode(new File(INVALID_OSU_FILE_PATH));
+        Optional<BeatMap> emptyOptional = BeatMapParser.decode(new File(INVALID_OSU_FILE_PATH));
 
         assert emptyOptional.isEmpty();
     }
@@ -101,7 +101,7 @@ public class SimpleFileLoading {
 
     @Test
     public void loadingHitObjectsOfValidFileLoadsTheRightAmountOfHitObjects() {
-        final ParsedHitObjects parsedHitObjects = Parser.decode(new File(VALID_OSU_FILE_PATH)).get().hitObjects;
+        final ParsedHitObjects parsedHitObjects = BeatMapParser.decode(new File(VALID_OSU_FILE_PATH)).get().hitObjects;
 
         assert parsedHitObjects.hitCircleData.size() == 283;
         assert parsedHitObjects.hitSliderData.size() == 116;
@@ -123,7 +123,7 @@ public class SimpleFileLoading {
 
     @Test
     public void loadingTimingPointsOfValidInOsuFileLoadsTheRightAmountOfLines() {
-        final ParsedTimingPoints parsedTimingPoints = Parser.decode(new File(VALID_OSU_FILE_PATH)).get().timingPoints;
+        final ParsedTimingPoints parsedTimingPoints = BeatMapParser.decode(new File(VALID_OSU_FILE_PATH)).get().timingPoints;
 
         assert parsedTimingPoints.greenLineData.size() == 33;
         assert parsedTimingPoints.redLineData.size() == 1;
