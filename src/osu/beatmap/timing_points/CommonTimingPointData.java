@@ -7,6 +7,7 @@ public class CommonTimingPointData {
     public int sampleSet;
     public int sampleIndex;
     public int volume;
+    public TimingPointType type;
     public int effects;
 
 }

@@ -20,21 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a32dcb6e-daf4-4ed3-a944-c53f04162325" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test/osu_file_parser/TimingPointSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/BeatMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/BeatMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/parser/ParsedHitObjects$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/parser/ParsedHitObjects$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/parser/ParsedHitObjects.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/parser/ParsedHitObjects.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/parser/ParsedTimingPoints$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/parser/ParsedTimingPoints$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/parser/ParsedTimingPoints.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/parser/ParsedTimingPoints.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/timing_points/CommonTimingPointData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/timing_points/CommonTimingPointData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/timing_points/GreenLineData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/timing_points/GreenLineData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/timing_points/RedLineData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/timing_points/RedLineData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/beatmap-parser/osu_file_parser/IRyS Ch. hololive-EN - Caesura of Despair (Plads) [Insane].osu" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/beatmap-parser/osu_file_parser/IRyS Ch. hololive-EN - Caesura of Despair (Plads) [Insane].osu" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/osu/beatmap/BeatMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/BeatMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/osu/beatmap/hit_objects/CommonHitObjectData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/hit_objects/CommonHitObjectData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/osu/beatmap/hit_objects/HitObjectTypeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/hit_objects/HitObjectTypeException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/osu/beatmap/hit_objects/circle/HitCircleData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/hit_objects/circle/HitCircleData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/osu/beatmap/hit_objects/slider/HitSliderData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/hit_objects/slider/HitSliderData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/osu/beatmap/hit_objects/slider/SliderControlPointException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/hit_objects/slider/SliderControlPointException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/osu/beatmap/hit_objects/slider/SliderTypeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/hit_objects/slider/SliderTypeException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/osu/beatmap/parser/OsuFileParserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/parser/OsuFileParserException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/osu/beatmap/parser/ParsedHitObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/parser/ParsedHitObjects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/osu/beatmap/parser/ParsedTimingPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/parser/ParsedTimingPoints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/osu/beatmap/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/parser/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/osu/beatmap/timing_points/CommonTimingPointData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/timing_points/CommonTimingPointData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/osu/beatmap/timing_points/GreenLineData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/timing_points/GreenLineData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/osu/beatmap/timing_points/RedLineData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/timing_points/RedLineData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/osu/beatmap/timing_points/TimingPointTypeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/timing_points/TimingPointTypeException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +76,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="osu_file_parser" />
       <recent name="osu.beatmap.timing_points" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
@@ -135,22 +136,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632504538120" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1632802416501">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1632805225265">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632802416501" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1632802416501">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632805225265" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1632805225264">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632802416501" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1632802416501">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632805225264" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1632805225264">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632802416501" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1632802416501">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632805225264" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1632805225265">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632802416501" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632805225265" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1632804758773">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632804758773" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1632804758773">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632804758773" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1632804758773">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632804758773" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1632804758773">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632804758773" />
     <state x="625" y="224" key="NewModule_or_Project.wizard" timestamp="1632503409473">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -17,7 +17,7 @@ public class RedLineData extends CommonTimingPointData {
         this.sampleSet = Integer.parseInt(splitData[3]);
         this.sampleIndex = Integer.parseInt(splitData[4]);
         this.volume = Integer.parseInt(splitData[5]);
-
+        this.type = TimingPointType.RED_LINE;
         this.effects = Integer.parseInt(splitData[7]);
     }
 }
