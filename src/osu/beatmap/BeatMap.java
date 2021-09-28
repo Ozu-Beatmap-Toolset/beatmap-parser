@@ -17,18 +17,33 @@ public class BeatMap {
     }
 
     public Optional<Double> findBeatLengthAt(final int time) {
-        return timingPoints.redLineData.stream()
+        final Optional<Double> beatLengthOpt = timingPoints.redLineData.stream()
                 .sorted(Comparator.comparingInt(timingPoint -> timingPoint.time))
                 .filter(timingPoint -> timingPoint.time < time)
                 .reduce((timingPoint1, timingPoint2) -> timingPoint1.time > timingPoint2.time ? timingPoint1 : timingPoint2)
                 .map(timingPoint -> timingPoint.beatLength);
+        if(beatLengthOpt.isPresent()) {
+            return beatLengthOpt;
+        }
+
+        return timingPoints.redLineData.stream()
+                .sorted(Comparator.comparingInt(timingPoint -> timingPoint.time))
+                .map(timingPoint -> timingPoint.beatLength)
+                .findFirst();
     }
 
     public Optional<Integer> findTimingOffsetAt(final int time) {
-        return timingPoints.redLineData.stream()
+        final Optional<Integer> offsetOpt = timingPoints.redLineData.stream()
                 .map(timingPoint -> timingPoint.time)
                 .sorted(Comparator.comparingInt(timingPointTime -> timingPointTime))
                 .filter(timingPointTime -> timingPointTime < time)
                 .reduce(Math::max);
+        if(offsetOpt.isPresent()) {
+            return offsetOpt;
+        }
+
+        return timingPoints.redLineData.stream()
+                .map(timingPoint -> timingPoint.time)
+                .min(Comparator.comparingInt(timingPointTime -> timingPointTime));
     }
 }

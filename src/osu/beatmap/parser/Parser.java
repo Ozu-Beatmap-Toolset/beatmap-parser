@@ -6,6 +6,7 @@ import util.file.IOFile;
 import java.io.File;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 public class Parser {
 
@@ -50,7 +51,10 @@ public class Parser {
         final int endOfSectionLineNumber = findEndOfSectionLineNumber(headerLineNumber, lines);
 
 
-        return lines.subList(1 + headerLineNumber, endOfSectionLineNumber);
+        return lines.subList(1 + headerLineNumber, endOfSectionLineNumber)
+                .stream()
+                .filter(s -> !s.equals(""))
+                .collect(Collectors.toList());
     }
 
     private static void throwOnInvalidLineNumber(final String headerName, final int headerLineNumber) throws OsuFileParserException {
