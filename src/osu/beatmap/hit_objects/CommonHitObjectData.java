@@ -15,9 +15,7 @@ public class CommonHitObjectData {
     public List<Integer> hitSample;
     public String customAdditionSoundFileName;
 
-    public CommonHitObjectData() {
-        this.hitSample = new ArrayList<>();
-    }
+    public CommonHitObjectData() {}
 
     public static List<Integer> parseHitSampleInts(String[] data) {
         List<Integer> hitSample;

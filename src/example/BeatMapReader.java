@@ -12,7 +12,7 @@ import java.util.Optional;
 
 public class BeatMapReader {
 
-    public static final void main(String[] args) {
+    public static void main(String[] args) {
         // create the file object
         final String root = IOFile.getRootFileNameFromClass("src", BeatMapReader.class);
         final String osuBeatMapFileName = "IRyS Ch. hololive-EN - Caesura of Despair (Plads) [Insane].osu";

@@ -24,18 +24,19 @@ public class Parser {
 
     private static Optional<BeatMap> decode(List<String> lines) {
         try {
-            final List<String> generalSection = extractOsuFileSection(GENERAL_HEADER_NAME, lines);
-            final List<String> editorSection = extractOsuFileSection(EDITOR_HEADER_NAME, lines);
-            final List<String> metaDataSection = extractOsuFileSection(METADATA_HEADER_NAME, lines);
-            final List<String> difficultySection = extractOsuFileSection(DIFFICULTY_HEADER_NAME, lines);
-            final List<String> eventsSection = extractOsuFileSection(EVENTS_HEADER_NAME, lines);
+            final List<String> generalSection =      extractOsuFileSection(GENERAL_HEADER_NAME, lines);
+            final List<String> editorSection =       extractOsuFileSection(EDITOR_HEADER_NAME, lines);
+            final List<String> metaDataSection =     extractOsuFileSection(METADATA_HEADER_NAME, lines);
+            final List<String> difficultySection =   extractOsuFileSection(DIFFICULTY_HEADER_NAME, lines);
+            final List<String> eventsSection =       extractOsuFileSection(EVENTS_HEADER_NAME, lines);
             final List<String> timingPointsSection = extractOsuFileSection(TIMING_POINTS_HEADER_NAME, lines);
-            final List<String> colorsSection = extractOsuFileSection(COLORS_HEADER_NAME, lines);
-            final List<String> hitObjectsSection = extractOsuFileSection(HIT_OBJECTS_HEADER_NAME, lines);
+            final List<String> colorsSection =       extractOsuFileSection(COLORS_HEADER_NAME, lines);
+            final List<String> hitObjectsSection =   extractOsuFileSection(HIT_OBJECTS_HEADER_NAME, lines);
 
+            final ParsedTimingPoints parsedTimingPoints = new ParsedTimingPoints(timingPointsSection);
             final ParsedHitObjects parsedHitObjects = new ParsedHitObjects(hitObjectsSection);
 
-            return Optional.of(new BeatMap(parsedHitObjects));
+            return Optional.of(new BeatMap(parsedTimingPoints, parsedHitObjects));
         }
         catch (OsuFileParserException exception) {
             exception.printStackTrace();

@@ -8,7 +8,9 @@ import osu.beatmap.hit_objects.circle.HitCircleData;
 import osu.beatmap.hit_objects.slider.HitSliderData;
 import osu.beatmap.hit_objects.slider.SliderType;
 import osu.beatmap.hit_objects.spinner.HitSpinnerData;
+import osu.beatmap.parser.ParsedTimingPoints;
 import osu.beatmap.parser.Parser;
+import osu.beatmap.timing_points.RedLineData;
 import util.file.IOFile;
 import util.math.vector.Vector2Int;
 
@@ -104,5 +106,26 @@ public class SimpleFileLoading {
         assert parsedHitObjects.hitCircleData.size() == 283;
         assert parsedHitObjects.hitSliderData.size() == 116;
         assert parsedHitObjects.hitSpinnerData.size() == 2;
+    }
+
+    @Test
+    public void loadingRedLineAtSpecifiedLineInOsuFileLoadsDataCorrectly() {
+        final RedLineData redLineData = new RedLineData(VALID_OSU_FILE_CONTENT.get(51));
+
+        assert redLineData.time == 2104;
+        assert Math.abs(redLineData.beatLength - 344.827586206897) < 0.0001;
+        assert redLineData.meter == 4;
+        assert redLineData.sampleSet == 1;
+        assert redLineData.sampleIndex == 0;
+        assert redLineData.volume == 100;
+        assert redLineData.effects == 0;
+    }
+
+    @Test
+    public void loadingTimingPointsOfValidInOsuFileLoadsTheRightAmountOfLines() {
+        final ParsedTimingPoints parsedTimingPoints = Parser.decode(new File(VALID_OSU_FILE_PATH)).get().timingPoints;
+
+        assert parsedTimingPoints.greenLineData.size() == 33;
+        assert parsedTimingPoints.redLineData.size() == 1;
     }
 }
