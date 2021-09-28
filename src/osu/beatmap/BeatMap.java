@@ -57,9 +57,14 @@ public class BeatMap {
             return beatLengthOpt;
         }
 
-        return timingPoints.greenLineData.stream()
+        final Optional<Double> earliestBeatLengthOpt = timingPoints.greenLineData.stream()
                 .sorted(Comparator.comparingInt(timingPoint -> timingPoint.time))
                 .map(timingPoint -> timingPoint.beatLength)
                 .findFirst();
+        if(earliestBeatLengthOpt.isPresent()) {
+            return earliestBeatLengthOpt;
+        }
+
+        return findBeatLengthAt(time);
     }
 }

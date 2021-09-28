@@ -20,28 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a32dcb6e-daf4-4ed3-a944-c53f04162325" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/osu/beatmap/serialization/BeatMapDeserializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/osu/beatmap/serialization/BeatMapSerializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/example/BeatMapReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beatmap-parser/example/BeatMapReader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/BeatMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/BeatMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/parser/OsuFileParserException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/parser/ParsedHitObjects$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/parser/ParsedHitObjects.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/parser/ParsedTimingPoints$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/parser/ParsedTimingPoints.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/parser/Parser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/beatmap-parser/osu_file_parser/SimpleFileLoading.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/beatmap-parser/osu_file_parser/SimpleFileLoading.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/beatmap-parser/osu_file_parser/TimingPointSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/beatmap-parser/osu_file_parser/TimingPointSearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/example/BeatMapReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/example/BeatMapReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/osu/beatmap/BeatMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/BeatMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/osu/beatmap/parser/OsuFileParserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/serialization/OsuFileParserException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/osu/beatmap/parser/ParsedHitObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/serialization/ParsedHitObjects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/osu/beatmap/parser/ParsedTimingPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/serialization/ParsedTimingPoints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/osu/beatmap/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/serialization/BeatMapParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/osu_file_parser/SimpleFileLoading.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/osu_file_parser/SimpleFileLoading.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/osu_file_parser/TimingPointSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/osu_file_parser/TimingPointSearch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
