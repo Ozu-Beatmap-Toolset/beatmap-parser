@@ -12,4 +12,5 @@ public class BeatMap {
         this.timingPoints = parsedTimingPoints;
         this.hitObjects = parsedHitObjects;
     }
+
 }

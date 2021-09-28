@@ -2,12 +2,12 @@ package osu.beatmap.timing_points;
 
 public class GreenLineData extends CommonTimingPointData {
 
-    public GreenLineData(String data) {
+    public GreenLineData(final String data) {
         finalizeParsing(data);
     }
 
-    private void finalizeParsing(String data) {
-        String[] splitData = data.split(",");
+    private void finalizeParsing(final String data) {
+        final String[] splitData = data.split(",");
 
         this.time = Integer.parseInt(splitData[0]);
         this.beatLength = Double.parseDouble(splitData[1]);

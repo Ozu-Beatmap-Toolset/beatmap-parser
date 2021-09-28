@@ -20,11 +20,11 @@ public class HitSliderData extends CommonHitObjectData {
     public List<Integer> edgeSounds;
     public List<SoundSet> edgeSets;
 
-    public HitSliderData(String data) {
+    public HitSliderData(final String data) {
         finalizeParsing(data);
     }
 
-    private void finalizeParsing(String data) {
+    private void finalizeParsing(final String data) {
         String[] splitData = data.split(",");
         this.position =      CommonHitObjectData.parsePosition(splitData);
         this.time =          CommonHitObjectData.parseTime(splitData);
@@ -41,14 +41,14 @@ public class HitSliderData extends CommonHitObjectData {
         try {
             stringSplitHitSample = splitData[10].split(":");
         }
-        catch(RuntimeException exception) {
+        catch(final RuntimeException exception) {
             stringSplitHitSample = new String[]{"0", "0", "0", "0", ""};
         }
         this.customAdditionSoundFileName = CommonHitObjectData.parseHitSampleCustomSoundFile(stringSplitHitSample);
         this.hitSample = CommonHitObjectData.parseHitSampleInts(stringSplitHitSample);
     }
 
-    private List<SoundSet> parseEdgeSets(String[] splitData) {
+    private List<SoundSet> parseEdgeSets(final String[] splitData) {
         try {
             return Arrays.stream(splitData[9].split("\\|"))
                     .map(s -> {
@@ -59,33 +59,33 @@ public class HitSliderData extends CommonHitObjectData {
                     })
                     .collect(Collectors.toList());
         }
-        catch(RuntimeException exception) {
+        catch(final RuntimeException exception) {
             return List.of(new SoundSet(0, 0), new SoundSet(0, 0));
         }
     }
 
-    private List<Integer> parseEdgeSounds(String[] splitData) {
+    private List<Integer> parseEdgeSounds(final String[] splitData) {
         try {
             return Arrays.stream(splitData[8].split("\\|"))
                     .map(Integer::parseInt)
                     .collect(Collectors.toList());
         }
-        catch(RuntimeException exception) {
+        catch(final RuntimeException exception) {
             return List.of(0, 0);
         }
     }
 
-    private List<Vector2Int> parseControlPoints(String[] splitData) {
+    private List<Vector2Int> parseControlPoints(final String[] splitData) {
         final List<Vector2Int> controlPoints = new ArrayList<>();
 
         final String[] controlPointsStrWithLetter = splitData[5].split("\\|");
-        String[] controlPointsStr = Arrays.copyOfRange(controlPointsStrWithLetter, 1, controlPointsStrWithLetter.length);
+        final String[] controlPointsStr = Arrays.copyOfRange(controlPointsStrWithLetter, 1, controlPointsStrWithLetter.length);
         Arrays.stream(controlPointsStr)
                 .forEach(controlPointStr -> {
                     try {
                         controlPoints.add(parseControlPoint(controlPointStr));
                     }
-                    catch(SliderControlPointException exception) {
+                    catch(final SliderControlPointException exception) {
                         exception.printStackTrace();
                     }
                 });
@@ -93,17 +93,17 @@ public class HitSliderData extends CommonHitObjectData {
         return controlPoints;
     }
 
-    private SliderType parseCurveType(String[] splitData) {
+    private SliderType parseCurveType(final String[] splitData) {
         try {
             return getCurveTypeFromLetter(splitData[5].charAt(0));
         }
-        catch(SliderTypeException exception) {
+        catch(final SliderTypeException exception) {
             exception.printStackTrace();
             return SliderType.UNDEFINED;
         }
     }
 
-    private Vector2Int parseControlPoint(String controlPointsStr) throws SliderControlPointException {
+    private Vector2Int parseControlPoint(final String controlPointsStr) throws SliderControlPointException {
         final String[] coordinatesStr = controlPointsStr.split(":");
 
         if(coordinatesStr.length != 2) {
@@ -116,7 +116,7 @@ public class HitSliderData extends CommonHitObjectData {
         return new Vector2Int(xCoordinate, yCoordinate);
     }
 
-    private SliderType getCurveTypeFromLetter(char letter) throws SliderTypeException {
+    private SliderType getCurveTypeFromLetter(final char letter) throws SliderTypeException {
         Optional<SliderType> sliderTypeOpt = Optional.empty();
 
         switch(letter) {

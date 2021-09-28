@@ -15,7 +15,7 @@ public class ParsedHitObjects {
     public List<HitSliderData> hitSliderData;
     public List<HitSpinnerData> hitSpinnerData;
 
-    public ParsedHitObjects(List<String> hitObjectData) {
+    public ParsedHitObjects(final List<String> hitObjectData) {
         this.hitCircleData = new ArrayList<>();
         this.hitSliderData = new ArrayList<>();
         this.hitSpinnerData = new ArrayList<>();
@@ -23,11 +23,10 @@ public class ParsedHitObjects {
         finalizeParsing(hitObjectData);
     }
 
-    private void finalizeParsing(List<String> hitObjectData) {
+    private void finalizeParsing(final List<String> hitObjectData) {
         hitObjectData.forEach(line -> {
             try {
-                final int lineNumber = hitObjectData.indexOf(line);
-                final HitObjectType hitObjectType = findTypeOfHitObject(line, lineNumber);
+                final HitObjectType hitObjectType = findTypeOfHitObject(line);
                 switch(hitObjectType) {
                     case CIRCLE -> hitCircleData.add(new HitCircleData(line));
                     case SLIDER -> hitSliderData.add(new HitSliderData(line));
@@ -35,13 +34,13 @@ public class ParsedHitObjects {
                     default -> {}
                 }
             }
-            catch (HitObjectTypeException exception) {
+            catch(final HitObjectTypeException exception) {
                 exception.printStackTrace();
             }
         });
     }
 
-    private HitObjectType findTypeOfHitObject(String line, int lineNumber) throws HitObjectTypeException {
+    private HitObjectType findTypeOfHitObject(final String line) throws HitObjectTypeException {
         final String[] data = line.split(",");
         final int type = Integer.parseInt(data[3]);
         if((type & 0b1) == 0b1) {

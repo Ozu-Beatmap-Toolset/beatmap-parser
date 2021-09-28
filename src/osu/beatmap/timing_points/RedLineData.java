@@ -4,12 +4,12 @@ public class RedLineData extends CommonTimingPointData {
 
     public int meter;
 
-    public RedLineData(String data) {
+    public RedLineData(final String data) {
         finalizeParsing(data);
     }
 
-    private void finalizeParsing(String data) {
-        String[] splitData = data.split(",");
+    private void finalizeParsing(final String data) {
+        final String[] splitData = data.split(",");
 
         this.time = Integer.parseInt(splitData[0]);
         this.beatLength = Double.parseDouble(splitData[1]);

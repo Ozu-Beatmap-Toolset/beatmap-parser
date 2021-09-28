@@ -7,11 +7,11 @@ public class HitCircleData extends CommonHitObjectData {
 
     public Vector2Int position;
 
-    public HitCircleData(String data) {
+    public HitCircleData(final String data) {
         finalizeParsing(data);
     }
 
-    private void finalizeParsing(String data) {
+    private void finalizeParsing(final String data) {
         String[] splitData = data.split(",");
 
         this.position =      CommonHitObjectData.parsePosition(splitData);

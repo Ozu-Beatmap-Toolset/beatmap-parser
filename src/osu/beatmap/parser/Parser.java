@@ -18,11 +18,11 @@ public class Parser {
     public static final String COLORS_HEADER_NAME = "[Colours]";
     public static final String HIT_OBJECTS_HEADER_NAME = "[HitObjects]";
 
-    public static Optional<BeatMap> decode(File file) {
+    public static Optional<BeatMap> decode(final File file) {
         return decode(IOFile.getFileContent(file.getAbsolutePath()));
     }
 
-    private static Optional<BeatMap> decode(List<String> lines) {
+    private static Optional<BeatMap> decode(final List<String> lines) {
         try {
             final List<String> generalSection =      extractOsuFileSection(GENERAL_HEADER_NAME, lines);
             final List<String> editorSection =       extractOsuFileSection(EDITOR_HEADER_NAME, lines);
@@ -38,13 +38,13 @@ public class Parser {
 
             return Optional.of(new BeatMap(parsedTimingPoints, parsedHitObjects));
         }
-        catch (OsuFileParserException exception) {
+        catch (final OsuFileParserException exception) {
             exception.printStackTrace();
             return Optional.empty();
         }
     }
 
-    private static List<String> extractOsuFileSection(String nameOfSectionToExtract, List<String> lines) throws OsuFileParserException {
+    private static List<String> extractOsuFileSection(final String nameOfSectionToExtract, final List<String> lines) throws OsuFileParserException {
         final int headerLineNumber = findHeaderLineNumber(nameOfSectionToExtract, lines);
         throwOnInvalidLineNumber(nameOfSectionToExtract, headerLineNumber);
         final int endOfSectionLineNumber = findEndOfSectionLineNumber(headerLineNumber, lines);
@@ -53,7 +53,7 @@ public class Parser {
         return lines.subList(1 + headerLineNumber, endOfSectionLineNumber);
     }
 
-    private static void throwOnInvalidLineNumber(String headerName, int headerLineNumber) throws OsuFileParserException {
+    private static void throwOnInvalidLineNumber(final String headerName, final int headerLineNumber) throws OsuFileParserException {
         if(headerLineNumber < 0) {
             throw new OsuFileParserException(headerName);
         }

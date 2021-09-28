@@ -14,30 +14,30 @@ public class ParsedTimingPoints {
     public List<RedLineData> redLineData;
     public List<GreenLineData> greenLineData;
 
-    public ParsedTimingPoints(List<String> timingPointsSection) {
+    public ParsedTimingPoints(final List<String> timingPointsSection) {
         this.redLineData = new ArrayList<>();
         this.greenLineData = new ArrayList<>();
 
         finalizeParsing(timingPointsSection);
     }
 
-    private void finalizeParsing(List<String> timingPointsSection) {
+    private void finalizeParsing(final List<String> timingPointsSection) {
         timingPointsSection.forEach(line -> {
             try {
-                final int lineNumber = timingPointsSection.indexOf(line);
-                final TimingPointType timingPointType = findTypeOfTimingPoint(line, lineNumber);
+                final TimingPointType timingPointType = findTypeOfTimingPoint(line);
                 switch(timingPointType) {
                     case RED_LINE -> redLineData.add(new RedLineData(line));
                     case GREEN_LINE -> greenLineData.add(new GreenLineData(line));
                     default -> {}
                 }
-            } catch (TimingPointTypeException exception) {
+            }
+            catch(final TimingPointTypeException exception) {
                 exception.printStackTrace();
             }
         });
     }
 
-    private TimingPointType findTypeOfTimingPoint(String line, int lineNumber) throws TimingPointTypeException {
+    private TimingPointType findTypeOfTimingPoint(final String line) throws TimingPointTypeException {
         final String[] data = line.split(",");
         final int type = Integer.parseInt(data[6]);
         if(type == 1) {

@@ -17,7 +17,7 @@ public class CommonHitObjectData {
 
     public CommonHitObjectData() {}
 
-    public static List<Integer> parseHitSampleInts(String[] data) {
+    public static List<Integer> parseHitSampleInts(final String[] data) {
         List<Integer> hitSample;
 
         hitSample = Arrays.stream(Arrays.copyOfRange(data, 0, 4))
@@ -30,28 +30,28 @@ public class CommonHitObjectData {
         return hitSample;
     }
 
-    public static String parseHitSampleCustomSoundFile(String[] data) {
+    public static String parseHitSampleCustomSoundFile(final String[] data) {
         if(data.length < 5) {
             return "";
         }
         return data[4];
     }
 
-    public static Vector2Int parsePosition(String[] splitData) {
+    public static Vector2Int parsePosition(final String[] splitData) {
         final int xPosition = Integer.parseInt(splitData[0]);
         final int yPosition = Integer.parseInt(splitData[1]);
         return new Vector2Int(xPosition, yPosition);
     }
 
-    public static int parseTime(String[] splitData) {
+    public static int parseTime(final String[] splitData) {
         return Integer.parseInt(splitData[2]);
     }
 
-    public static int parseHitObjectType(String[] splitData) {
+    public static int parseHitObjectType(final String[] splitData) {
         return Integer.parseInt(splitData[3]);
     }
 
-    public static int parseHitSound(String[] splitData) {
+    public static int parseHitSound(final String[] splitData) {
         return Integer.parseInt(splitData[4]);
     }
 
