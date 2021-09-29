@@ -18,13 +18,19 @@ public class BeatMapDeserializer {
             final List<String> difficultySection =   extractOsuFileSection(DIFFICULTY_HEADER_NAME, lines);
             final List<String> eventsSection =       extractOsuFileSection(EVENTS_HEADER_NAME, lines);
             final List<String> timingPointsSection = extractOsuFileSection(TIMING_POINTS_HEADER_NAME, lines);
-            final List<String> colorsSection =       extractOsuFileSection(COLORS_HEADER_NAME, lines);
+            final List<String> coloursSection =       extractOsuFileSection(COLORS_HEADER_NAME, lines);
             final List<String> hitObjectsSection =   extractOsuFileSection(HIT_OBJECTS_HEADER_NAME, lines);
 
+            final ParsedGeneral parsedGeneral = new ParsedGeneral(generalSection);
+            final ParsedEditor parsedEditor = new ParsedEditor(editorSection);
+            final ParsedMetadata parsedMetadata = new ParsedMetadata(metaDataSection);
+            final ParsedDifficulty parsedDifficulty = new ParsedDifficulty(difficultySection);
+            final ParsedEvents parsedEvents = new ParsedEvents(eventsSection);
             final ParsedTimingPoints parsedTimingPoints = new ParsedTimingPoints(timingPointsSection);
+            final ParsedColours parsedColours = new ParsedColours(coloursSection);
             final ParsedHitObjects parsedHitObjects = new ParsedHitObjects(hitObjectsSection);
 
-            return Optional.of(new BeatMap(parsedTimingPoints, parsedHitObjects));
+            return Optional.of(new BeatMap(parsedGeneral, parsedEditor, parsedMetadata, parsedDifficulty, parsedEvents, parsedTimingPoints, parsedColours, parsedHitObjects));
         }
         catch (final OsuFileParserException exception) {
             exception.printStackTrace();

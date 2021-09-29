@@ -20,9 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a32dcb6e-daf4-4ed3-a944-c53f04162325" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/osu/beatmap/colours/ColorData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/osu/beatmap/events/EventData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/osu/beatmap/serialization/ParsedColours.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/osu/beatmap/serialization/ParsedDifficulty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/osu/beatmap/serialization/ParsedEditor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/osu/beatmap/serialization/ParsedEvents.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/osu/beatmap/serialization/ParsedGeneral.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/osu/beatmap/serialization/ParsedMetadata.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/BeatMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/BeatMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/serialization/BeatMapDeserializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/serialization/BeatMapDeserializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/timing_points/GreenLineData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/timing_points/GreenLineData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/beatmap-parser/osu_file_parser/TimingPointSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/beatmap-parser/osu_file_parser/TimingPointSearch.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/osu/beatmap/BeatMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/BeatMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/osu/beatmap/serialization/BeatMapDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/serialization/BeatMapDeserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/osu/beatmap/timing_points/GreenLineData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/timing_points/GreenLineData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/osu_file_parser/TimingPointSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/osu_file_parser/TimingPointSearch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,22 +139,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632504538120" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1632807739314">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1632886493027">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632807739314" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1632807739314">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632886493027" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1632886493027">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632807739314" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1632807739313">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632886493027" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1632886493027">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632807739313" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1632807739314">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632886493027" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1632886493027">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632807739314" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632886493027" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1632804758773">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -173,5 +187,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="342" y="140" key="new project wizard/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632505194245" />
+    <state x="2536" y="240" key="run.anything.popup" timestamp="1632862593014">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2536" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632862593014" />
   </component>
 </project>

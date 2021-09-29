@@ -2,6 +2,8 @@ package osu.beatmap.timing_points;
 
 public class GreenLineData extends CommonTimingPointData {
 
+    public static final double DEFAULT_BEAT_LENGTH_VALUE = -100;
+
     public GreenLineData(final String data) {
         finalizeParsing(data);
     }
