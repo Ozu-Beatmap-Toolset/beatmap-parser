@@ -28,7 +28,7 @@ public class ParsedGeneral {
     }
 
     private void finalizeParsing(final List<String> fileData) {
-        this.audioFileName =                             extractValueOf(fileData, "AudioFileName")           .orElse("");
+        this.audioFileName =                             extractValueOf(fileData, "AudioFilename")           .orElse("");
         this.audioLeadIn =              Integer.parseInt(extractValueOf(fileData, "AudioLeadIn")             .orElse("0"));
         this.previewTime =              Integer.parseInt(extractValueOf(fileData, "PreviewTime")             .orElse("-1"));
         this.countDown =                Integer.parseInt(extractValueOf(fileData, "Countdown")               .orElse("1"));
