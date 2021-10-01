@@ -1,8 +1,6 @@
 package osu.beatmap.serialization;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 public class ParsedGeneral {
 
@@ -52,5 +50,30 @@ public class ParsedGeneral {
                 .filter(s -> s[0].equals(designator))
                 .map(strings -> strings.length == 2 ? strings[1] : "")
                 .findFirst();
+    }
+
+    public List<String> asFileContent() {
+        final List<String> fileContent = new ArrayList<>();
+
+        fileContent.add(BeatmapParser.GENERAL_HEADER_NAME);
+        fileContent.add("AudioFilename: " + audioFileName);
+        fileContent.add("AudioLeadIn: " + audioLeadIn);
+        fileContent.add("PreviewTime: " + previewTime);
+        fileContent.add("Countdown: " + countDown);
+        fileContent.add("SampleSet: " + sampleSet);
+        fileContent.add("StackLeniency: " + stackLeniency);
+        fileContent.add("Mode: " + mode);
+        fileContent.add("LetterboxInBreaks: " + letterboxInBreaks);
+        fileContent.add("UseSkinSprites: " + useSkinSprites);
+        fileContent.add("OverlayPosition: " + overlayPosition);
+        fileContent.add("SkinPreference: " + skinPreference);
+        fileContent.add("EpilepsyWarning: " + epilepsyWarning);
+        fileContent.add("CountdownOffset: " + countdownOffset);
+        fileContent.add("SpecialStyle: " + specialStyle);
+        fileContent.add("WidescreenStoryboard: " + widescreenStoryboard);
+        fileContent.add("SamplesMatchPlaybackRate: " + samplesMatchPlaybackRate);
+        fileContent.add("");
+
+        return fileContent;
     }
 }

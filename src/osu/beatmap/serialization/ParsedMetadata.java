@@ -1,5 +1,6 @@
 package osu.beatmap.serialization;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ParsedMetadata {
@@ -38,5 +39,24 @@ public class ParsedMetadata {
                 .filter(s -> s[0].equals(designator))
                 .map(strings -> strings.length == 2 ? strings[1] : "")
                 .findFirst().get();
+    }
+
+    public List<String> asFileContent() {
+        final List<String> fileContent = new ArrayList<>();
+
+        fileContent.add(BeatmapParser.METADATA_HEADER_NAME);
+        fileContent.add("Title:" + title);
+        fileContent.add("TitleUnicode:" + titleUnicode);
+        fileContent.add("Artist:" + artist);
+        fileContent.add("ArtistUnicode:" + artistUnicode);
+        fileContent.add("Creator:" + creator);
+        fileContent.add("Version:" + version);
+        fileContent.add("Source:" + source);
+        fileContent.add("Tags:" + tags);
+        fileContent.add("BeatmapID:" + beatmapId);
+        fileContent.add("BeatmapSetID:" + beatmapSetId);
+        fileContent.add("");
+
+        return fileContent;
     }
 }

@@ -1,8 +1,8 @@
 package osu_file_parser;
 
 import org.junit.jupiter.api.Test;
-import osu.beatmap.BeatMap;
-import osu.beatmap.serialization.BeatMapParser;
+import osu.beatmap.Beatmap;
+import osu.beatmap.serialization.BeatmapParser;
 import util.file.IOFile;
 
 import java.io.File;
@@ -15,35 +15,35 @@ public class TimingPointSearch {
 
     @Test
     public void callToFindBeatLengthFromBeatMapObjectFindsTheRightBeatLength() {
-        BeatMap beatmap = BeatMapParser.decode(new File(VALID_OSU_FILE_PATH)).get();
+        Beatmap beatmap = BeatmapParser.decode(new File(VALID_OSU_FILE_PATH)).get();
 
         assert Math.abs(beatmap.findBeatLengthAt(1000).get() - 344.827586206897) < 0.0001;
     }
 
     @Test
     public void callToFindTimingOffsetFromBeatMapObjectFindsTheRightTimingOffset() {
-        BeatMap beatmap = BeatMapParser.decode(new File(VALID_OSU_FILE_PATH)).get();
+        Beatmap beatmap = BeatmapParser.decode(new File(VALID_OSU_FILE_PATH)).get();
 
         assert beatmap.findTimingOffsetAt(3000).get() == 2104;
     }
 
     @Test
     public void callToFindInheritedBeatLengthFromBeatMapObjectFindsTheRightBeatLength() {
-        BeatMap beatmap = BeatMapParser.decode(new File(VALID_OSU_FILE_PATH)).get();
+        Beatmap beatmap = BeatmapParser.decode(new File(VALID_OSU_FILE_PATH)).get();
 
         assert Math.abs(beatmap.findSliderVelocityAt(60000) - 0.6524999585151667) < 0.0001;
     }
 
     @Test
     public void callToFindBeatLengthBeforeAnyTimingPointFindsTheFirstBeatLength() {
-        BeatMap beatmap = BeatMapParser.decode(new File(VALID_OSU_FILE_PATH)).get();
+        Beatmap beatmap = BeatmapParser.decode(new File(VALID_OSU_FILE_PATH)).get();
 
         assert Math.abs(beatmap.findBeatLengthAt(1000).get() - 344.827586206897) < 0.0001;
     }
 
     @Test
     public void callToFindTimingOffsetBeforeAnyTimingPointFindsTheFirstOffset() {
-        BeatMap beatmap = BeatMapParser.decode(new File(VALID_OSU_FILE_PATH)).get();
+        Beatmap beatmap = BeatmapParser.decode(new File(VALID_OSU_FILE_PATH)).get();
 
         assert beatmap.findTimingOffsetAt(1000).get() == 2104;
     }

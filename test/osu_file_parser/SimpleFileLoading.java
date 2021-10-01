@@ -1,7 +1,8 @@
 package osu_file_parser;
 
 import org.junit.jupiter.api.Test;
-import osu.beatmap.BeatMap;
+import osu.beatmap.Beatmap;
+import osu.beatmap.hit_objects.HitObjectType;
 import osu.beatmap.serialization.ParsedHitObjects;
 import osu.beatmap.hit_objects.SoundSet;
 import osu.beatmap.hit_objects.circle.HitCircleData;
@@ -9,7 +10,7 @@ import osu.beatmap.hit_objects.slider.HitSliderData;
 import osu.beatmap.hit_objects.slider.SliderType;
 import osu.beatmap.hit_objects.spinner.HitSpinnerData;
 import osu.beatmap.serialization.ParsedTimingPoints;
-import osu.beatmap.serialization.BeatMapParser;
+import osu.beatmap.serialization.BeatmapParser;
 import osu.beatmap.timing_points.RedLineData;
 import util.file.IOFile;
 import util.math.vector.Vector2Int;
@@ -29,14 +30,14 @@ public class SimpleFileLoading {
 
     @Test
     public void loadingValidOsuFileReturnsOptionalOfOsuMap() {
-        Optional<BeatMap> filledOptional = BeatMapParser.decode(new File(VALID_OSU_FILE_PATH));
+        Optional<Beatmap> filledOptional = BeatmapParser.decode(new File(VALID_OSU_FILE_PATH));
 
         assert filledOptional.isPresent();
     }
 
     @Test
     public void loadingInvalidOsuFileReturnsEmptyOptional() {
-        Optional<BeatMap> emptyOptional = BeatMapParser.decode(new File(INVALID_OSU_FILE_PATH));
+        Optional<Beatmap> emptyOptional = BeatmapParser.decode(new File(INVALID_OSU_FILE_PATH));
 
         assert emptyOptional.isEmpty();
     }
@@ -48,7 +49,7 @@ public class SimpleFileLoading {
         assert hitCircleData.position.x == 297;
         assert hitCircleData.position.y == 109;
         assert hitCircleData.time == 4690;
-        assert hitCircleData.hitObjectType == 5;
+        assert hitCircleData.hitObjectType == HitObjectType.CIRCLE;
         assert hitCircleData.hitSound == 0;
         assert hitCircleData.hitSample.get(0) == 1;
         assert hitCircleData.hitSample.get(1) == 0;
@@ -64,7 +65,7 @@ public class SimpleFileLoading {
         assert hitSliderData.position.x == 240;
         assert hitSliderData.position.y == 138;
         assert hitSliderData.time == 3483;
-        assert hitSliderData.hitObjectType == 6;
+        assert hitSliderData.hitObjectType == HitObjectType.SLIDER;
         assert hitSliderData.hitSound == 0;
         assert hitSliderData.curveType == SliderType.BEZIER;
         assert hitSliderData.controlPoints.get(0).equals(new Vector2Int(211, 136));
@@ -89,7 +90,7 @@ public class SimpleFileLoading {
         final HitSpinnerData hitSpinnerData = new HitSpinnerData(VALID_OSU_FILE_CONTENT.get(117));
 
         assert hitSpinnerData.time == 12621;
-        assert hitSpinnerData.hitObjectType == 12;
+        assert hitSpinnerData.hitObjectType == HitObjectType.SPINNER;
         assert hitSpinnerData.hitSound == 0;
         assert hitSpinnerData.endTime == 16242;
         assert hitSpinnerData.hitSample.get(0) == 1;
@@ -101,7 +102,7 @@ public class SimpleFileLoading {
 
     @Test
     public void loadingHitObjectsOfValidFileLoadsTheRightAmountOfHitObjects() {
-        final ParsedHitObjects parsedHitObjects = BeatMapParser.decode(new File(VALID_OSU_FILE_PATH)).get().hitObjects;
+        final ParsedHitObjects parsedHitObjects = BeatmapParser.decode(new File(VALID_OSU_FILE_PATH)).get().hitObjects;
 
         assert parsedHitObjects.hitCircleData.size() == 283;
         assert parsedHitObjects.hitSliderData.size() == 116;
@@ -123,7 +124,7 @@ public class SimpleFileLoading {
 
     @Test
     public void loadingTimingPointsOfValidInOsuFileLoadsTheRightAmountOfLines() {
-        final ParsedTimingPoints parsedTimingPoints = BeatMapParser.decode(new File(VALID_OSU_FILE_PATH)).get().timingPoints;
+        final ParsedTimingPoints parsedTimingPoints = BeatmapParser.decode(new File(VALID_OSU_FILE_PATH)).get().timingPoints;
 
         assert parsedTimingPoints.greenLineData.size() == 33;
         assert parsedTimingPoints.redLineData.size() == 1;

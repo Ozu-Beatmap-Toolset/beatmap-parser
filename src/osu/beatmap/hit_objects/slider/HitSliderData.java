@@ -1,6 +1,7 @@
 package osu.beatmap.hit_objects.slider;
 
 import osu.beatmap.hit_objects.CommonHitObjectData;
+import osu.beatmap.hit_objects.HitObjectType;
 import osu.beatmap.hit_objects.SoundSet;
 import util.math.vector.Vector2Int;
 
@@ -13,6 +14,8 @@ import java.util.stream.Collectors;
 public class HitSliderData extends CommonHitObjectData {
 
     public Vector2Int position;
+    public boolean isNewCombo;
+    public int amountOfComboColorsToSkip;
     public SliderType curveType;
     public List<Vector2Int> controlPoints;
     public int slides;
@@ -28,7 +31,9 @@ public class HitSliderData extends CommonHitObjectData {
         String[] splitData = data.split(",");
         this.position =      CommonHitObjectData.parsePosition(splitData);
         this.time =          CommonHitObjectData.parseTime(splitData);
-        this.hitObjectType = CommonHitObjectData.parseHitObjectType(splitData);
+        this.hitObjectType = HitObjectType.SLIDER;
+        this.isNewCombo =    (Integer.parseInt(splitData[3]) & 4) != 0;
+        this.amountOfComboColorsToSkip = (Integer.parseInt(splitData[3]) >> 4) & 7;
         this.hitSound =      CommonHitObjectData.parseHitSound(splitData);
         this.curveType =                    this.parseCurveType(splitData);
         this.controlPoints =                this.parseControlPoints(splitData);

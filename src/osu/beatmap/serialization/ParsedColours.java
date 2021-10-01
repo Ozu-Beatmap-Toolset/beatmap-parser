@@ -8,7 +8,9 @@ import osu.beatmap.timing_points.TimingPointTypeException;
 
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ParsedColours {
 
@@ -29,5 +31,23 @@ public class ParsedColours {
                 exception.printStackTrace();
             }
         });
+    }
+
+    public List<String> asFileContent() {
+        final List<String> fileContent = new ArrayList<>();
+
+        final List<String> convertedColors = colorData.stream()
+                .map(colorData -> {
+                    final int indexOfColor = this.colorData.indexOf(colorData) + 1;
+                    final Color color = colorData.color;
+                    return "Combo" + indexOfColor + " : " + color.getRed() + "," + color.getGreen() + "," + color.getBlue();
+                })
+                .collect(Collectors.toList());
+
+        fileContent.add(BeatmapParser.COLORS_HEADER_NAME);
+        fileContent.addAll(convertedColors);
+        fileContent.add("");
+
+        return fileContent;
     }
 }

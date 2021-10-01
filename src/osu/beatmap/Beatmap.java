@@ -1,18 +1,15 @@
 package osu.beatmap;
 
 import osu.beatmap.serialization.*;
-import osu.beatmap.timing_points.CommonTimingPointData;
 import osu.beatmap.timing_points.GreenLineData;
 import osu.beatmap.timing_points.RedLineData;
-import osu.beatmap.timing_points.TimingPointType;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
-public class BeatMap {
+public class Beatmap {
 
     public ParsedGeneral general;
     public ParsedEditor editor;
@@ -23,7 +20,7 @@ public class BeatMap {
     public ParsedColours colours;
     public ParsedHitObjects hitObjects;
 
-    public BeatMap(
+    public Beatmap(
             final ParsedGeneral parsedGeneral,
             final ParsedEditor parsedEditor,
             final ParsedMetadata parsedMetadata,

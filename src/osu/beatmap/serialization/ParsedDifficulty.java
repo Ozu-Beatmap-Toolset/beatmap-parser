@@ -1,5 +1,6 @@
 package osu.beatmap.serialization;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ParsedDifficulty {
@@ -30,5 +31,20 @@ public class ParsedDifficulty {
                 .filter(s -> s[0].equals(designator))
                 .map(strings -> strings.length == 2 ? strings[1] : "")
                 .findFirst().get());
+    }
+
+    public List<String> asFileContent() {
+        final List<String> fileContent = new ArrayList<>();
+
+        fileContent.add(BeatmapParser.DIFFICULTY_HEADER_NAME);
+        fileContent.add("HPDrainRate:" + hpDrainRate);
+        fileContent.add("CircleSize:" + circleSize);
+        fileContent.add("OverallDifficulty:" + overallDifficulty);
+        fileContent.add("ApproachRate:" + approachRate);
+        fileContent.add("SliderMultiplier:" + sliderMultiplier);
+        fileContent.add("SliderTickRate:" + sliderTickRate);
+        fileContent.add("");
+
+        return fileContent;
     }
 }

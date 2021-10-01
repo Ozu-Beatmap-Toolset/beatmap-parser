@@ -5,12 +5,13 @@ import util.math.vector.Vector2Int;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class CommonHitObjectData {
 
     public int time;
-    public int hitObjectType;
+    public HitObjectType hitObjectType;
     public int hitSound;
     public List<Integer> hitSample;
     public String customAdditionSoundFileName;
@@ -45,10 +46,6 @@ public class CommonHitObjectData {
 
     public static int parseTime(final String[] splitData) {
         return Integer.parseInt(splitData[2]);
-    }
-
-    public static int parseHitObjectType(final String[] splitData) {
-        return Integer.parseInt(splitData[3]);
     }
 
     public static int parseHitSound(final String[] splitData) {

@@ -1,14 +1,14 @@
 package osu.beatmap.serialization;
 
-import osu.beatmap.BeatMap;
+import osu.beatmap.Beatmap;
 import util.file.IOFile;
 
 import java.io.File;
-import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
-public class BeatMapParser {
+public class BeatmapParser {
+
+    public static final String VERSION = "v0.0.1 BETA";
 
     public static final String GENERAL_HEADER_NAME = "[General]";
     public static final String EDITOR_HEADER_NAME = "[Editor]";
@@ -19,12 +19,12 @@ public class BeatMapParser {
     public static final String COLORS_HEADER_NAME = "[Colours]";
     public static final String HIT_OBJECTS_HEADER_NAME = "[HitObjects]";
 
-    public static Optional<BeatMap> decode(final File file) {
-        return BeatMapDeserializer.decode(IOFile.getFileContent(file.getAbsolutePath()));
+    public static Optional<Beatmap> decode(final File file) {
+        return BeatmapDeserializer.decode(IOFile.getFileContent(file.getAbsolutePath()));
     }
 
-    public static void encode(final BeatMap beatMap, final File file) {
-        BeatMapSerializer.encode(beatMap, IOFile.getFileContent(file.getAbsolutePath()));
+    public static void encode(final Beatmap beatMap, final File file) {
+        BeatmapSerializer.encode(beatMap, fileContent -> IOFile.createFileWithContent(file.getAbsolutePath(), fileContent));
     }
 
 }

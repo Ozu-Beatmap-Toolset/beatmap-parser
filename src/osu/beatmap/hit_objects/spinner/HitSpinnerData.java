@@ -1,6 +1,7 @@
 package osu.beatmap.hit_objects.spinner;
 
 import osu.beatmap.hit_objects.CommonHitObjectData;
+import osu.beatmap.hit_objects.HitObjectType;
 import util.math.vector.Vector2Int;
 
 public class HitSpinnerData extends CommonHitObjectData {
@@ -16,7 +17,7 @@ public class HitSpinnerData extends CommonHitObjectData {
     private void finalizeParsing(String data) {
         String[] splitData = data.split(",");
         this.time =          CommonHitObjectData.parseTime(splitData);
-        this.hitObjectType = CommonHitObjectData.parseHitObjectType(splitData);
+        this.hitObjectType = HitObjectType.SPINNER;
         this.hitSound =      CommonHitObjectData.parseHitSound(splitData);
         this.endTime =                   Integer.parseInt(splitData[5]);
 

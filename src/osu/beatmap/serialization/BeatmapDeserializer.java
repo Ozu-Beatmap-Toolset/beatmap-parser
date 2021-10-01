@@ -1,16 +1,16 @@
 package osu.beatmap.serialization;
 
-import osu.beatmap.BeatMap;
+import osu.beatmap.Beatmap;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-import static osu.beatmap.serialization.BeatMapParser.*;
+import static osu.beatmap.serialization.BeatmapParser.*;
 
-public class BeatMapDeserializer {
+public class BeatmapDeserializer {
 
-    public static Optional<BeatMap> decode(final List<String> lines) {
+    public static Optional<Beatmap> decode(final List<String> lines) {
         try {
             final List<String> generalSection =      extractOsuFileSection(GENERAL_HEADER_NAME, lines);
             final List<String> editorSection =       extractOsuFileSection(EDITOR_HEADER_NAME, lines);
@@ -30,7 +30,7 @@ public class BeatMapDeserializer {
             final ParsedColours parsedColours = new ParsedColours(coloursSection);
             final ParsedHitObjects parsedHitObjects = new ParsedHitObjects(hitObjectsSection);
 
-            return Optional.of(new BeatMap(parsedGeneral, parsedEditor, parsedMetadata, parsedDifficulty, parsedEvents, parsedTimingPoints, parsedColours, parsedHitObjects));
+            return Optional.of(new Beatmap(parsedGeneral, parsedEditor, parsedMetadata, parsedDifficulty, parsedEvents, parsedTimingPoints, parsedColours, parsedHitObjects));
         }
         catch (final OsuFileParserException exception) {
             exception.printStackTrace();
