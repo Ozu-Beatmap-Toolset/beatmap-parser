@@ -1,4 +1,4 @@
-# Osu beatmap file parser in Java
+# Osu beatmap file parser
 
 A simple java library to read and write to osu beatmap files. 
 
