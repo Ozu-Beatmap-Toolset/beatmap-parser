@@ -21,8 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a32dcb6e-daf4-4ed3-a944-c53f04162325" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/serialization/ParsedEditor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/serialization/ParsedEditor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/osu/beatmap/serialization/ParsedEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/serialization/ParsedEditor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/example/BeatMapReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beatmap-parser/example/BeatMapReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/example/BeatMapReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/example/BeatMapReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +57,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -72,7 +72,20 @@
       <recent name="osu.beatmap.parser" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.All in beatmap-parser">
+    <configuration name="BeatMapReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="example.BeatMapReader" />
+      <module name="beatmap-parser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in beatmap-parser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="beatmap-parser" />
       <option name="PACKAGE_NAME" value="" />
@@ -84,6 +97,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in beatmap-parser" />
+        <item itemvalue="Application.BeatMapReader" />
       </list>
     </recent_temporary>
   </component>
@@ -125,22 +139,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632504538120" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1632952380458">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1633146946708">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632952380458" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1632952380458">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633146946708" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1633146946708">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632952380458" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1632952380458">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633146946708" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1633146946707">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632952380458" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1632952380458">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633146946707" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1633146946708">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632952380458" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633146946708" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1632952380458">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -161,10 +175,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="625" y="224" key="NewModule_or_Project.wizard/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632503409473" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1632504638651">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2360" y="94" key="SettingsEditor" timestamp="1633146640047">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632504638651" />
+    <state x="2360" y="94" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633146640047" />
     <state x="664" y="412" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1632503332290">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
