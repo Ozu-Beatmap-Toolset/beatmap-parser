@@ -4,9 +4,7 @@ import osu.beatmap.serialization.*;
 import osu.beatmap.timing_points.GreenLineData;
 import osu.beatmap.timing_points.RedLineData;
 
-import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.List;
 import java.util.Optional;
 
 public class Beatmap {
@@ -73,16 +71,16 @@ public class Beatmap {
     public double findSliderVelocityAt(final int time) {
         final Optional<RedLineData> redLineData = findActiveRedLine(time);
         final Optional<GreenLineData> greenLineDataOpt = findActiveGreenLine(time);
-        double beatsPerSecond = 1/redLineData.get().beatLength;
+        double pixelsPerMillis = (100 * difficulty.sliderMultiplier) / redLineData.get().beatLength;
+        pixelsPerMillis *= difficulty.sliderMultiplier;
 
         if(greenLineDataOpt.isPresent()) {
             if(redLineData.get().time <= greenLineDataOpt.get().time) {
-                beatsPerSecond *= -100/greenLineDataOpt.get().beatLength;
-                beatsPerSecond *= difficulty.sliderMultiplier;
+                pixelsPerMillis *= -100/greenLineDataOpt.get().beatLength;
             }
         }
 
-        return 100 * beatsPerSecond;
+        return pixelsPerMillis;
     }
 
     private Optional<RedLineData> findActiveRedLine(final int time) {
