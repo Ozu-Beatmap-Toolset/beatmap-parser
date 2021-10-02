@@ -72,7 +72,6 @@ public class Beatmap {
         final Optional<RedLineData> redLineData = findActiveRedLine(time);
         final Optional<GreenLineData> greenLineDataOpt = findActiveGreenLine(time);
         double pixelsPerMillis = (100 * difficulty.sliderMultiplier) / redLineData.get().beatLength;
-        pixelsPerMillis *= difficulty.sliderMultiplier;
 
         if(greenLineDataOpt.isPresent()) {
             if(redLineData.get().time <= greenLineDataOpt.get().time) {
