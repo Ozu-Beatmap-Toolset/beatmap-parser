@@ -6,7 +6,7 @@ import java.util.List;
 public class ParsedEditor {
 
     public String bookmarks;
-    public int distanceSpacing;
+    public double distanceSpacing;
     public int beatDivisor;
     public int gridSize;
     public double timelineZoom;
@@ -17,7 +17,7 @@ public class ParsedEditor {
 
     private void finalizeParsing(final List<String> fileData) {
         this.bookmarks =                        extractValueOf(fileData, "Bookmarks");
-        this.distanceSpacing = Integer.parseInt(extractValueOf(fileData, "DistanceSpacing"));
+        this.distanceSpacing =  Double.parseDouble(extractValueOf(fileData, "DistanceSpacing"));
         this.beatDivisor =     Integer.parseInt(extractValueOf(fileData, "BeatDivisor"));
         this.gridSize =        Integer.parseInt(extractValueOf(fileData, "GridSize"));
         this.timelineZoom =  Double.parseDouble(extractValueOf(fileData, "TimelineZoom"));
