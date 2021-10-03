@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32dcb6e-daf4-4ed3-a944-c53f04162325" name="Default Changelist" comment="" />
+    <list default="true" id="a32dcb6e-daf4-4ed3-a944-c53f04162325" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +70,7 @@
       <recent name="osu.beatmap.parser" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in beatmap-parser">
+  <component name="RunManager" selected="Application.BeatMapReader">
     <configuration name="BeatMapReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="example.BeatMapReader" />
       <module name="beatmap-parser" />
@@ -92,8 +94,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in beatmap-parser" />
         <item itemvalue="Application.BeatMapReader" />
+        <item itemvalue="JUnit.All in beatmap-parser" />
       </list>
     </recent_temporary>
   </component>
@@ -143,22 +145,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632504538120" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1633228385653">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1633242488370">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633228385653" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1633228385653">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633242488370" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1633242488370">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633228385653" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1633228385653">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633242488370" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1633242488370">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633228385653" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1633228385653">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633242488370" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1633242488370">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633228385653" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633242488370" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1632952380458">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
