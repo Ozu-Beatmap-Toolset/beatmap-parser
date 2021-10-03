@@ -20,7 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a32dcb6e-daf4-4ed3-a944-c53f04162325" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/osu/beatmap/operations/SliderVelocityFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/osu/beatmap/operations/TimingPointOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/BeatMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/BeatMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/serialization/ParsedTimingPoints$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/serialization/ParsedTimingPoints$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/serialization/ParsedTimingPoints.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/serialization/ParsedTimingPoints.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/osu/beatmap/Beatmap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/Beatmap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/osu/beatmap/serialization/ParsedTimingPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/serialization/ParsedTimingPoints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/osu_file_parser/TimingPointSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/osu_file_parser/TimingPointSearch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,10 +133,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1633222360710">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633222360710" />
     <state x="690" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1632503426468">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632503426468" />
+    <state x="2663" y="389" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1633222618524">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2663" y="389" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633222618524" />
     <state x="2597" y="274" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1632506534258">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
