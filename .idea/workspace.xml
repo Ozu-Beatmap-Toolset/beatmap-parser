@@ -20,14 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a32dcb6e-daf4-4ed3-a944-c53f04162325" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/osu/beatmap/operations/SliderVelocityFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/osu/beatmap/operations/TimingPointOperations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/BeatMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/BeatMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/serialization/ParsedTimingPoints$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/serialization/ParsedTimingPoints$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/serialization/ParsedTimingPoints.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/serialization/ParsedTimingPoints.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/osu/beatmap/Beatmap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/Beatmap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/osu/beatmap/serialization/ParsedTimingPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/serialization/ParsedTimingPoints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/hit_objects/slider/HitSliderData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/hit_objects/slider/HitSliderData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/operations/SliderVelocityFinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/operations/SliderVelocityFinder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/osu/beatmap/hit_objects/slider/HitSliderData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/hit_objects/slider/HitSliderData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/osu/beatmap/operations/SliderVelocityFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/operations/SliderVelocityFinder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/osu_file_parser/TimingPointSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/osu_file_parser/TimingPointSearch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,22 +150,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632504538120" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1633147082008">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1633228385653">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633147082008" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1633147082008">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633228385653" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1633228385653">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633147082008" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1633147082008">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633228385653" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1633228385653">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633147082008" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1633147082008">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633228385653" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1633228385653">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633147082008" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633228385653" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1632952380458">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

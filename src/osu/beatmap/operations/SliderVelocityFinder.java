@@ -10,9 +10,7 @@ import java.util.Optional;
 
 public class SliderVelocityFinder {
 
-    public static double findSliderVelocityAt(final Beatmap beatmap, final int time) {
-        final ParsedTimingPoints timingPoints = beatmap.timingPoints;
-        final ParsedDifficulty difficulty = beatmap.difficulty;
+    public static double findSliderVelocityAt(final ParsedTimingPoints timingPoints, final ParsedDifficulty difficulty, final int time) {
         final RedLineData redLineData = TimingPointOperations.findActiveRedLine(timingPoints.redLineData, time);
         final Optional<GreenLineData> greenLineDataOpt = TimingPointOperations.findActiveGreenLine(timingPoints.greenLineData, time);
         double pixelsPerMillis = (100 * difficulty.sliderMultiplier) / redLineData.beatLength;

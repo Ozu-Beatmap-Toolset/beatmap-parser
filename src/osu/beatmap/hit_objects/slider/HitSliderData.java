@@ -1,8 +1,12 @@
 package osu.beatmap.hit_objects.slider;
 
+import osu.beatmap.Beatmap;
 import osu.beatmap.hit_objects.CommonHitObjectData;
 import osu.beatmap.hit_objects.HitObjectType;
 import osu.beatmap.hit_objects.SoundSet;
+import osu.beatmap.operations.SliderVelocityFinder;
+import osu.beatmap.serialization.ParsedDifficulty;
+import osu.beatmap.serialization.ParsedTimingPoints;
 import util.math.vector.Vector2Int;
 
 import java.util.ArrayList;
@@ -51,6 +55,16 @@ public class HitSliderData extends CommonHitObjectData {
         }
         this.customAdditionSoundFileName = CommonHitObjectData.parseHitSampleCustomSoundFile(stringSplitHitSample);
         this.hitSample = CommonHitObjectData.parseHitSampleInts(stringSplitHitSample);
+    }
+
+    public double getEndTime(final ParsedTimingPoints timingPoints, final ParsedDifficulty difficulty) {
+        final double sliderVelocity = SliderVelocityFinder.findSliderVelocityAt(timingPoints, difficulty, time);
+        return time + length*slides/sliderVelocity;
+    }
+
+    public void setEndTime(final ParsedTimingPoints timingPoints, final ParsedDifficulty difficulty, final double endTime) {
+        final double sliderVelocity = SliderVelocityFinder.findSliderVelocityAt(timingPoints, difficulty, time);
+        length = (endTime - time) * sliderVelocity / slides;
     }
 
     private List<SoundSet> parseEdgeSets(final String[] splitData) {

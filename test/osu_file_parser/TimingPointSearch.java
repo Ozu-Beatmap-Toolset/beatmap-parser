@@ -33,7 +33,7 @@ public class TimingPointSearch {
     public void callToFindInheritedBeatLengthFromBeatMapObjectFindsTheRightBeatLength() {
         Beatmap beatmap = BeatmapParser.decode(new File(VALID_OSU_FILE_PATH)).get();
 
-        assert Math.abs(SliderVelocityFinder.findSliderVelocityAt(beatmap,60000) - 0.6524999585151667) < 0.0001;
+        assert Math.abs(SliderVelocityFinder.findSliderVelocityAt(beatmap.timingPoints, beatmap.difficulty,60000) - 0.6524999585151667) < 0.0001;
     }
 
     @Test
