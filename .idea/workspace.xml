@@ -20,7 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a32dcb6e-daf4-4ed3-a944-c53f04162325" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/osu/beatmap/events/AnimationData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/osu/beatmap/events/BackgroundData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/osu/beatmap/events/BreakData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/osu/beatmap/events/CommonEventData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/osu/beatmap/events/EventType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/osu/beatmap/events/SpriteData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/osu/beatmap/events/VideoData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/events/EventData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/serialization/ParsedEvents.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beatmap-parser/osu/beatmap/serialization/ParsedEvents.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/osu/beatmap/events/EventData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/osu/beatmap/serialization/ParsedEvents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/osu/beatmap/serialization/ParsedEvents.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +41,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -62,6 +74,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="osu.beatmap.events" />
       <recent name="osu.beatmap.serialization" />
       <recent name="osu_file_parser" />
       <recent name="osu.beatmap.timing_points" />
@@ -70,7 +83,7 @@
       <recent name="osu.beatmap.parser" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BeatMapReader">
+  <component name="RunManager" selected="JUnit.All in beatmap-parser">
     <configuration name="BeatMapReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="example.BeatMapReader" />
       <module name="beatmap-parser" />
@@ -94,8 +107,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BeatMapReader" />
         <item itemvalue="JUnit.All in beatmap-parser" />
+        <item itemvalue="Application.BeatMapReader" />
       </list>
     </recent_temporary>
   </component>
@@ -125,6 +138,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2506" y="198" key="#Inspections" timestamp="1633815958893">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2506" y="198" key="#Inspections/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633815958893" />
     <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1633222360710">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -145,38 +162,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632504538120" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1633242488370">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1633820201744">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633242488370" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1633242488370">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633820201744" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1633820201744">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633242488370" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1633242488370">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633820201744" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1633820201743">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633242488370" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1633242488370">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633820201743" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1633820201744">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633242488370" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1632952380458">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633820201744" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1633816704877">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632952380458" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1632952380458">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633816704877" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1633816704877">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632952380458" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1632952380458">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633816704877" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1633816704877">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632952380458" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1632952380458">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633816704877" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1633816704877">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632952380458" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633816704877" />
     <state x="625" y="224" key="NewModule_or_Project.wizard" timestamp="1632503409473">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -198,9 +215,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2536" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632862593014" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1633049010535">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1633817935588">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1633049010535" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633817935588" />
   </component>
 </project>
